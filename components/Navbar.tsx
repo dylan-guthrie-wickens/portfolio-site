@@ -1,62 +1,42 @@
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlinePaperClip,
-} from 'react-icons/ai'
-import { GoLocation } from 'react-icons/go'
+import { FunctionComponent, useEffect, useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+  const pages = [
+    { name: 'About', path: '/' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Resume', path: '/resume' },
+  ]
+
+  const [activePage, setActivePage] = useState('')
+
+  const { pathname } = useRouter()
+
+  useEffect(() => {
+    const currentPage = pages.find((page) => page.path === pathname)
+    if (currentPage) {
+      setActivePage(currentPage.name)
+    }
+  }, [pathname])
+
   return (
-    <div>
-      <img
-        src="/picofme.png"
-        alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
-      />
-      <h3 className="my-4 text-3xl font-medium tracking-wider">
-        <span>Dylan Guthrie-Wickens</span>
-      </h3>
-      <p className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full">
-        Full-Stack Software Developer
-      </p>
-      <a
-        href=""
-        download="name"
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
-      >
-        <AiOutlinePaperClip className="w-10 h-10" />
-        Download Resume
-      </a>
-      {/* social icons */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-black md:w-full">
-        <a href="">
-          <AiFillGithub className="w-10 h-10 cursor-pointer" />
-        </a>
-        <a href="">
-          <AiFillLinkedin className="w-10 h-10 cursor-pointer" />
-        </a>
+    <div className="flex justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold text-black border-b-4">
+        {activePage}
+      </span>
+      <div className="flex space-x-3 text-lg text-red-600">
+        {pages.map(
+          (page) =>
+            activePage !== page.name && (
+              <Link href={page.path} key={page.name}>
+                <span onClick={() => setActivePage(page.name)}>
+                  {page.name}
+                </span>
+              </Link>
+            )
+        )}
       </div>
-      {/* address */}
-      <div
-        className="py-4 my-5 bg-gray-200"
-        style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
-      >
-        <div className="flex items-center justify-center space-x-2">
-          <GoLocation className="w-10 h-10" />
-          <span>{`Otautahi (Christchurch), Aotearoa (New Zealand)`}</span>
-        </div>
-        <p className="my-2">dylan-guthrie@hotmail.com</p>
-        {/* email buttons */}
-      </div>
-      <button
-        className="w-8/12 px-5 py-2 my-2 text-white bg-black rounded-full focus:outline-none"
-        onClick={() => window.open('mailto:dylan-guthrie@hotmail.com')}
-      >
-        Email Me
-      </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white bg-black rounded-full">
-        Toggle Theme
-      </button>
     </div>
   )
 }
