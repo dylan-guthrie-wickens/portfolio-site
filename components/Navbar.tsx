@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -22,15 +22,18 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-black border-b-4">
+      <span className="text-xl font-bold text-black border-b-4 md:text-2xl">
         {activePage}
       </span>
-      <div className="flex space-x-3 text-lg text-red-600">
+      <div className="flex space-x-5 text-lg">
         {pages.map(
           (page) =>
             activePage !== page.name && (
               <Link href={page.path} key={page.name}>
-                <span onClick={() => setActivePage(page.name)}>
+                <span
+                  className="cursor-pointer hover:text-stone-500"
+                  onClick={() => setActivePage(page.name)}
+                >
                   {page.name}
                 </span>
               </Link>
