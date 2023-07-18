@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className="col-span-12 p-4 text-center bg-white lg:col-span-3 rounded-2xl">
         <SideMenu />
       </div>
-      <div className="flex col-span-12 bg-white lg:col-span-9 rounded-2xl flex-column">
+      <div className="flex flex-col col-span-12 overflow-hidden bg-white lg:col-span-9 rounded-2xl">
         <Navbar />
         <Component {...pageProps} />
       </div>
