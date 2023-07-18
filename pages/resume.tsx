@@ -15,8 +15,10 @@ export default function Resume() {
             <p className="my-3">{`blah blah`}</p>
           </div>
         </div>
+
+        {/* music */}
         <div>
-          <h5 className="my-3 text-2xl font-bold">{`Education`}</h5>
+          <h5 className="my-3 text-2xl font-bold">{`Music Projects`}</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">{`School`}</h5>
             <p className="font-semibold">{`details`}</p>
@@ -26,7 +28,7 @@ export default function Resume() {
       </div>
 
       {/* languages and tools */}
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid h-full gap-6 md:grid-cols-2">
         {techStacks.map((techStack, i) => (
           <div key={`${i} ${techStack.title}`}>
             <h5 className="my-3 text-2xl font-bold">{techStack.title}</h5>

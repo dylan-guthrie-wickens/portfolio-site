@@ -6,6 +6,7 @@ import { useState } from 'react'
 export default function Projects() {
   const [projects, setProjects] = useState(projectData)
   const [active, setActive] = useState('All')
+  const [showDetail, setShowDetail] = useState<number | null>(null)
 
   const filterByCategory = (category: string) => {
     if (category === 'All') {
@@ -28,9 +29,13 @@ export default function Projects() {
         {projects.map((project, i) => (
           <div
             key={`${i}-${project.name}`}
-            className="col-span-12 p-2 bg-gray-200 rounded-md sm:col-span-6 lg:col-span-4 dark:bg-black"
+            className="col-span-12 p-2 rounded-md sm:col-span-6 lg:col-span-4 bg-slate-300 dark:text-slate-100 dark:bg-slate-600 hover:bg-slate-500 dark:hover:bg-slate-500"
           >
-            <ProjectCard project={project} />
+            <ProjectCard
+              project={project}
+              showDetail={showDetail}
+              setShowDetail={setShowDetail}
+            />
           </div>
         ))}
       </div>

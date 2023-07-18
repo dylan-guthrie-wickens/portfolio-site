@@ -5,9 +5,9 @@ const NavItem: FunctionComponent<{
   filterByCategory: Function
   active: string
 }> = ({ value, filterByCategory, active }) => {
-  let className = 'cursor-pointer hover:text-stone-500'
+  let className = 'cursor-pointer hover:text-slate-500'
   if (active === value) {
-    className += ' text-stone-500'
+    className += ' text-slate-500'
   }
 
   return (

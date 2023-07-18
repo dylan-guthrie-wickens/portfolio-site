@@ -6,7 +6,7 @@ export default function Navbar() {
   const pages = [
     { name: 'About', path: '/' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Resume', path: '/resume' },
+    { name: 'Proficiencies', path: '/resume' },
   ]
 
   const [activePage, setActivePage] = useState('')
@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-black border-b-4 md:text-2xl">
+      <span className="text-xl font-bold border-b-4 dark:border-slate-100 border-slate-300 md:text-2xl">
         {activePage}
       </span>
       <div className="flex space-x-5 text-lg">
@@ -31,7 +31,7 @@ export default function Navbar() {
             activePage !== page.name && (
               <Link href={page.path} key={`${i} ${page.name}`}>
                 <span
-                  className="cursor-pointer hover:text-stone-500"
+                  className="cursor-pointer hover:text-slate-500"
                   onClick={() => setActivePage(page.name)}
                 >
                   {page.name}

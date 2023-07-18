@@ -17,6 +17,7 @@ export interface TechStack {
 }
 
 export interface Project {
+  id: number
   name: string
   description: string
   imagePath: string

@@ -1,17 +1,21 @@
-import { Project } from '@/lib/models'
+import { ProjectLink } from '@/lib/models'
 import { FunctionComponent } from 'react'
 import Image from 'next/image'
 
-const ProjectPopUp: FunctionComponent<{ project: Project }> = ({
-  project: { description, urls, imagePath, name, techs },
-}) => {
+const ProjectPopUp: FunctionComponent<{
+  description: string
+  urls: ProjectLink[]
+  imagePath: string
+  name: string
+  techs: string[]
+}> = ({ description, urls, imagePath, name, techs }) => {
   return (
     <>
       <div>
         <Image
           src={imagePath}
           alt={name}
-          className="rounded-md"
+          className="border-2 rounded-md border-slate-950"
           width="300"
           height="150"
           layout="responsive"
@@ -37,7 +41,7 @@ const ProjectPopUp: FunctionComponent<{ project: Project }> = ({
         <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
           {techs.map((tech, i) => (
             <span
-              className="px-2 py-1 my-1 bg-gray-200 rounded-md dark:text-black"
+              className="px-2 py-1 my-1 bg-gray-200 rounded-md dark:text-slate-950"
               key={`${i} ${tech}`}
             >
               {tech}

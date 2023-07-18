@@ -17,6 +17,26 @@
 }
 
 body {
-  background-color: black;
+  background-color: #030712;
   font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cbd5e1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b; 
 }

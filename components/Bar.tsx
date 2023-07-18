@@ -5,9 +5,9 @@ const Bar: FunctionComponent<{ tech: Tech }> = ({
   tech: { Icon, name, level },
 }) => {
   return (
-    <div className="my-2 text-white bg-gray-300 rounded-full">
+    <div className="my-2 rounded-full">
       <div
-        className="flex items-center px-4 py-1 bg-black rounded-full"
+        className="flex items-center px-4 py-1 rounded-full bg-slate-300 dark:bg-slate-600"
         style={{ width: `${level}%` }}
       >
         <Icon className="mr-3" />
