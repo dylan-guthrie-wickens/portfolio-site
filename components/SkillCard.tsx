@@ -1,11 +1,7 @@
 import { Skill } from '@/lib/models'
 import { FunctionComponent } from 'react'
 
-type SkillCardProps = {
-  skill: Skill
-}
-
-const SkillCard: FunctionComponent<SkillCardProps> = ({
+const SkillCard: FunctionComponent<{ skill: Skill }> = ({
   skill: { Icon, about, title },
 }) => {
   function createMarkup() {
@@ -13,6 +9,7 @@ const SkillCard: FunctionComponent<SkillCardProps> = ({
       __html: about,
     }
   }
+
   return (
     <div className="flex items-center p-2 space-x-4">
       <Icon className="w-12 h-12 text-black" />

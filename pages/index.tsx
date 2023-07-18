@@ -10,7 +10,7 @@ export default function Index() {
         className="flex-grow p-4 mt-5 bg-gray-400"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
-        <h6 className="my-3 text-xl font-bold tracking-wide">{`Tech Stack`}</h6>
+        <h6 className="my-3 text-xl font-bold tracking-wide">{`Skills`}</h6>
 
         <div className="grid gap-6 lg:grid-cols-2">
           {skills.map((skill, i) => (

@@ -5,3 +5,13 @@ export interface Skill {
   about: string
   Icon: IconType
 }
+export interface Tech {
+  name: string
+  level: string
+  Icon: IconType
+}
+
+export interface TechStack {
+  title: string
+  data: Tech[]
+}
