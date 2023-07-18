@@ -1,5 +1,6 @@
 import { RiComputerLine } from 'react-icons/ri'
-import { Skill, TechStack } from './models'
+import { AiFillGithub } from 'react-icons/ai'
+import { Project, Skill, TechStack } from './models'
 
 export const skills: Skill[] = [
   {
@@ -104,5 +105,88 @@ export const techStacks: TechStack[] = [
         Icon: RiComputerLine,
       },
     ],
+  },
+]
+
+export const projects: Project[] = [
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
+  },
+  {
+    name: 'Purrfect Paws Life',
+    description: "Hasbro's Game of Life clone featuring cats!",
+    imagePath: '/images/purrfect-paws-life.png',
+    urls: [{ url: 'github-link', Icon: AiFillGithub }],
+    category: ['react'],
+    techs: ['React', 'Zustand'],
   },
 ]

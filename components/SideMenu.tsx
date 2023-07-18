@@ -5,13 +5,21 @@ import {
 } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 
+import { useTheme } from 'next-themes'
+
 export default function SideMenu() {
+  const { theme, setTheme } = useTheme()
+
+  function changeTheme() {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
   return (
     <div>
       <img
-        src="/picofme.png"
+        src="/images/picofme.png"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="w-32 h-32 mx-auto bg-black border-2 border-black rounded-full"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider">
         <span>{`Dylan Guthrie-Wickens`}</span>
@@ -54,7 +62,10 @@ export default function SideMenu() {
       >
         {`Email Me`}
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white bg-black rounded-full">
+      <button
+        onClick={changeTheme}
+        className="w-8/12 px-5 py-2 my-2 text-white bg-black rounded-full"
+      >
         {`Toggle Theme`}
       </button>
     </div>
