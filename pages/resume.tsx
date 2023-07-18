@@ -27,12 +27,12 @@ export default function Resume() {
 
       {/* languages and tools */}
       <div className="grid gap-6 md:grid-cols-2">
-        {techStacks.map((techStack) => (
-          <div key={techStack.title}>
+        {techStacks.map((techStack, i) => (
+          <div key={`${i} ${techStack.title}`}>
             <h5 className="my-3 text-2xl font-bold">{techStack.title}</h5>
             <div className="my-2">
               {techStack.data.map((item: Tech, i: number) => (
-                <Bar tech={item} key={i} />
+                <Bar tech={item} key={`${i} ${item}`} />
               ))}
             </div>
           </div>

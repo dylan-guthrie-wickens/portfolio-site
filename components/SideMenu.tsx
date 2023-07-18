@@ -4,8 +4,8 @@ import {
   AiOutlinePaperClip,
 } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
-
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 export default function SideMenu() {
   const { theme, setTheme } = useTheme()
@@ -16,10 +16,14 @@ export default function SideMenu() {
 
   return (
     <div>
-      <img
+      <Image
         src="/images/picofme.png"
         alt="user avatar"
-        className="w-32 h-32 mx-auto bg-black border-2 border-black rounded-full"
+        className="mx-auto bg-black border-2 border-black rounded-full"
+        height="128"
+        width="128"
+        layout="intrinsic"
+        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider">
         <span>{`Dylan Guthrie-Wickens`}</span>

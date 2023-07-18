@@ -15,7 +15,7 @@ export default function Index() {
         <div className="grid gap-6 lg:grid-cols-2">
           {skills.map((skill, i) => (
             <div
-              key={`${i} ${skill}`}
+              key={`${i} ${skill.title}`}
               className="bg-gray-200 rounded-lg lg:col-span-1"
             >
               <SkillCard skill={skill} />

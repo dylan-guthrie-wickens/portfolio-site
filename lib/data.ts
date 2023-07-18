@@ -40,7 +40,7 @@ export const techStacks: TechStack[] = [
     title: 'Languages and Frameworks',
     data: [
       {
-        name: 'JavaScript',
+        name: 'Javascript',
         level: '100%',
         Icon: RiComputerLine,
       },
@@ -114,7 +114,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['Javascript'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['Javascript'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['Javascript'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['Javascript'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
   {
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     description: "Hasbro's Game of Life clone featuring cats!",
     imagePath: '/images/purrfect-paws-life.png',
     urls: [{ url: 'github-link', Icon: AiFillGithub }],
-    category: ['react'],
+    category: ['React'],
     techs: ['React', 'Zustand'],
   },
 ]

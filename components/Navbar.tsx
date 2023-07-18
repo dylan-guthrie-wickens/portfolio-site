@@ -27,9 +27,9 @@ export default function Navbar() {
       </span>
       <div className="flex space-x-5 text-lg">
         {pages.map(
-          (page) =>
+          (page, i) =>
             activePage !== page.name && (
-              <Link href={page.path} key={page.name}>
+              <Link href={page.path} key={`${i} ${page.name}`}>
                 <span
                   className="cursor-pointer hover:text-stone-500"
                   onClick={() => setActivePage(page.name)}
