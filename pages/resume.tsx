@@ -21,7 +21,7 @@ export default function Resume() {
         <div>
           <h5 className="my-3 text-2xl font-bold">{`Music Projects`}</h5>
           <div>
-            <div className="grid justify-around w-9/12 h-full mx-auto my-5 md:grid-cols-3 md:w-full">
+            <div className="grid justify-around w-9/12 w-full h-full grid-cols-3 mx-auto my-5">
               <h5 className="my-2 text-xl font-bold">{`Ma Barka`}</h5>
               <a href="https://soundcloud.com/mabarkabeats">
                 <RiSoundcloudFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />

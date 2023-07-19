@@ -6,14 +6,24 @@ import {
 } from 'react-icons/ai'
 import { BsSun, BsMoon } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
+import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 
 export default function SideMenu() {
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
   function changeTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
   }
 
   return (
