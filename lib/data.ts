@@ -127,7 +127,7 @@ export const projects: Project[] = [
     I was the scrum master again for this project, and organised our team quickly through a full day planning session, and several sprints, first for MVP, then to attempt further functionality.\n
     I worked extensively on the game logic and overall structure of the app, using React, Knex, Express, Vite, Zustand, React Query, Typescript, and CSS.\n
     The project quickly grew in scope as we worked on it, as it was the first large scale game we had worked on, the complexity added challenges as we went, necessitating changes to our plan on the fly, and learning new tech like Zustand to solve novel problems.\n
-    We presented this to a group of our family, friends, and peers, and I organised and oversaw our presentation preparation, and created the assets for us to use.\n
+    We presented this to a group of our family, friends, and peers, and I facilitated and oversaw our presentation preparation, and helped create the assets for us to use.\n
     I learned a huge amount on this project, about myself as a leader, about teamwork, and about the limitations of some of the technologies we used. Sometimes things really are impossible, it's not just something you can think through.\n
     The game is not currently functional, and if I rebuild it, I will fundamentally redesign the game "engine" to have a ticker that checks the state periodically. This will get past the issues we had with our current implementation I hope.`,
     imagePath: '/images/purrfect-paws-life.png',
