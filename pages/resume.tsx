@@ -23,21 +23,21 @@ export default function Resume() {
           <div>
             <div className="grid justify-around w-9/12 h-full mx-auto my-5 md:grid-cols-3 md:w-full">
               <h5 className="my-2 text-xl font-bold">{`Ma Barka`}</h5>
-              <a href="">
+              <a href="https://soundcloud.com/mabarkabeats">
                 <RiSoundcloudFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />
               </a>
-              <a href="">
+              <a href="https://open.spotify.com/artist/76wXGkqJN6UspnheN2KxQP?si=DHUtup_YSLuqfx0R4xWWFw">
                 <RiSpotifyFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />
               </a>
               <h5 className="my-2 text-xl font-bold">{`Dusty`}</h5>
-              <a href="">
+              <a href="https://soundcloud.com/dustynz">
                 <RiSoundcloudFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />
               </a>
-              <a href="">
+              <a href="https://open.spotify.com/artist/7uSrQ6yuLBhtA57dEWv78b?si=zLm-3SkuT-axByWMwizrxA">
                 <RiSpotifyFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />
               </a>
               <h5 className="my-2 text-xl font-bold">{`Ooza`}</h5>
-              <a href="">
+              <a href="https://soundcloud.com/oozamusic">
                 <RiSoundcloudFill className="w-10 h-10 cursor-pointer hover:text-slate-500" />
               </a>
             </div>
