@@ -139,7 +139,17 @@ export const projects: Project[] = [
       },
     ],
     category: ['React'],
-    techs: ['React', 'Zustand'],
+    techs: [
+      'React',
+      'Zustand',
+      'Vite',
+      'TypeScript',
+      'Express',
+      'React Query',
+      'Knex',
+      'SQLite',
+      'Superagent',
+    ],
   },
   {
     id: 2,
