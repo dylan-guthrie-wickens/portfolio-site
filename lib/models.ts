@@ -7,7 +7,6 @@ export interface Skill {
 }
 export interface Tech {
   name: string
-  level: string
   Icon: IconType
 }
 
@@ -28,5 +27,6 @@ export interface Project {
 
 export interface ProjectLink {
   url: string
+  type: string
   Icon: IconType
 }

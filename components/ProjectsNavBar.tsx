@@ -21,7 +21,7 @@ const ProjectsNavBar: FunctionComponent<{
   filterByCategory: Function
   active: string
 }> = (props) => {
-  const categories = ['All', 'React', 'Javascript']
+  const categories = ['All', 'React', 'Express.js']
 
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">

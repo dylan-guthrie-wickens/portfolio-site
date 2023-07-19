@@ -29,7 +29,7 @@ const ProjectPopUp: FunctionComponent<{
               className="flex items-center px-4 py-2 space-x-3"
             >
               <url.Icon />
-              <span>Github</span>
+              <span>{url.type}</span>
             </a>
           ))}
         </div>
