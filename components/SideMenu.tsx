@@ -4,6 +4,7 @@ import {
   AiFillMail,
   AiOutlinePaperClip,
 } from 'react-icons/ai'
+import { BsSun, BsMoon } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
@@ -17,6 +18,15 @@ export default function SideMenu() {
 
   return (
     <div className="text-slate-950 dark:text-slate-100">
+      {/* theme button */}
+      <button
+        onClick={changeTheme}
+        className="absolute px-3 py-3 rounded-full left-3 top-3 bg-slate-300 dark:text-slate-100 dark:bg-slate-600 hover:bg-slate-500 dark:hover:bg-slate-500"
+      >
+        {theme === 'light' ? <BsMoon /> : <BsSun />}
+      </button>
+
+      {/* avatar and name*/}
       <Image
         src="/images/picofme.png"
         alt="user avatar"
@@ -32,6 +42,8 @@ export default function SideMenu() {
       <h4 className="flex items-center justify-center px-2 py-2 my-3 text-xl rounded-full dark:bg-slate-600 bg-slate-300">
         {`Full-Stack Software Developer`}
       </h4>
+
+      {/* download resume */}
       <a
         href="/assets/dylan-guthrie-wickens-resume.pdf"
         download="Dylan Guthrie-Wickens Resume"
@@ -60,15 +72,7 @@ export default function SideMenu() {
           <GoLocation className="w-10 h-10" />
           <span>{`Otautahi (Christchurch), Aotearoa (New Zealand)`}</span>
         </div>
-
-        {/* theme buttons */}
       </div>
-      <button
-        onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-2 rounded-full bg-slate-300 dark:text-slate-100 dark:bg-slate-600 hover:bg-slate-500 dark:hover:bg-slate-500"
-      >
-        {`Toggle Theme`}
-      </button>
     </div>
   )
 }
