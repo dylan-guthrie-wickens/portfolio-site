@@ -4,38 +4,12 @@ import {
   AiFillMail,
   AiOutlinePaperClip,
 } from 'react-icons/ai'
-import { BsSun, BsMoon } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
 import Image from 'next/image'
 
 export default function SideMenu() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  function changeTheme() {
-    setTheme(theme === 'light' ? 'dark' : 'light')
-  }
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
   return (
     <div className="text-slate-950 dark:text-slate-100">
-      {/* theme button */}
-      <button
-        onClick={changeTheme}
-        className="absolute px-3 py-3 rounded-full left-3 top-3 bg-slate-300 dark:text-slate-100 dark:bg-slate-600 hover:bg-slate-500 dark:hover:bg-slate-500"
-      >
-        {theme === 'light' ? <BsMoon /> : <BsSun />}
-      </button>
-
       {/* avatar and name*/}
       <Image
         src="/images/picofme.png"
