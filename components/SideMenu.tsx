@@ -29,7 +29,7 @@ export default function SideMenu() {
 
       {/* download resume */}
       <a
-        href="/assets/dylan-guthrie-wickens-resume.pdf"
+        href="/assets/dylan-guthrie-wickens-resume.docx"
         download="Dylan Guthrie-Wickens Resume"
         className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-slate-300 dark:text-slate-100 dark:bg-slate-600 hover:bg-slate-500 dark:hover:bg-slate-500"
       >
