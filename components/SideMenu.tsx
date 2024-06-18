@@ -45,7 +45,7 @@ export default function SideMenu() {
         <a href="https://www.linkedin.com/in/dylan-guthrie-wickens/">
           <AiFillLinkedin className="w-10 h-10 cursor-pointer hover:text-slate-500" />
         </a>
-        <a onClick={() => window.open('mailto:dylan-guthrie@hotmail.com')}>
+        <a onClick={() => window.open('mailto:dylanwickens@hotmail.com')}>
           <AiFillMail className="w-10 h-10 cursor-pointer hover:text-slate-500" />
         </a>
       </div>
@@ -54,7 +54,7 @@ export default function SideMenu() {
       <div className="p-2 my-5 rounded-full bg-slate-300 dark:bg-slate-600">
         <div className="flex items-center justify-center py-2 space-x-2">
           <GoLocation className="w-10 h-10" />
-          <span>{`Otautahi (Christchurch), Aotearoa (New Zealand)`}</span>
+          <span>{`Melbourne, Australia`}</span>
         </div>
       </div>
     </div>
