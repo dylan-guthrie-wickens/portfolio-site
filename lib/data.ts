@@ -1,4 +1,4 @@
-import { RiComputerLine, RiMusic2Line } from 'react-icons/ri'
+import { RiComputerLine, RiMusic2Line, RiClipboardLine } from 'react-icons/ri'
 import { FaServer } from 'react-icons/fa'
 import { AiOutlineApi, AiFillGithub, AiFillPlaySquare } from 'react-icons/ai'
 import {
@@ -95,6 +95,12 @@ export const techStacks: TechStack[] = [
 
 export const skills: Skill[] = [
   {
+    title: 'General, Sales, and Warehouse Manager',
+    about:
+      'For 10 years I worked in a hybrid role requiring me to manage a retail shop, geenerate leads, make sales, oversee staff, coordinate logistics, and organise complex systems including front end sales and back end website and accounting software.',
+    Icon: RiClipboardLine,
+  },
+  {
     title: 'Frontend development',
     about:
       'I can build scalable and accessible front end designs using a variety of technologies, including React, Next.js, Tailwind etc.',
@@ -116,7 +122,8 @@ export const skills: Skill[] = [
     about:
       'I produce electronic music under a number of aliases, and have releases on multiple international labels',
     Icon: RiMusic2Line,
-  },
+  },  
+  
 ]
 
 export const projects: Project[] = [
