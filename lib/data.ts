@@ -1,4 +1,4 @@
-import { RiComputerLine, RiMusic2Line, RiClipboardLine } from 'react-icons/ri'
+import { RiComputerLine, RiMusic2Line, RiClipboardLine, RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { FaServer } from 'react-icons/fa'
 import { AiOutlineApi, AiFillGithub, AiFillPlaySquare } from 'react-icons/ai'
 import {
@@ -95,10 +95,28 @@ export const techStacks: TechStack[] = [
 
 export const skills: Skill[] = [
   {
-    title: 'General, Sales, and Warehouse Manager',
+    title: 'General Manager',
     about:
-      'For 10 years I worked in a hybrid role requiring me to manage a retail shop, geenerate leads, make sales, oversee staff, coordinate logistics, and organise complex systems including front end sales and back end website and accounting software.',
+      'For 10 years I worked in a hybrid role requiring me to manage a retail shop and warehouse, and oversee staff.',
     Icon: RiClipboardLine,
+  },
+  {
+    title: 'Sales Manager',
+    about:
+      'In my role as manager I coordinated the sales department, generated leads, produced point of sale, and led ad campaigns.',
+    Icon: RiMoneyDollarCircleLine,
+  },
+  {
+    title: 'Warehouse and Inventory Manager',
+    about:
+      'My management role also extended to running a warehouse, coordinating logistics, and managing orders and inventory for our retail business, and installation business.',
+    Icon: RiClipboardLine,
+  },
+  {
+    title: 'IT Support',
+    about:
+      'My role at Lifestyle included supporting our technology needs, such as running our website, creating backend inventory systems, and maintaining IT infrastructure.',
+    Icon: RiComputerLine,
   },
   {
     title: 'Frontend development',
