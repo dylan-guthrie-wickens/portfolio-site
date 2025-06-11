@@ -4,7 +4,7 @@ import SkillCard from '@/components/SkillCard'
 export default function Index() {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
-      <h5 className="my-3 font-medium">{`I am a versatile full-stack software developer who has recently transitioned from a successful career in high-end retail and management to the field of software development. With a strong passion for leveraging technology to create innovative solutions, I thrive on the challenge of creative problem-solving. I am looking forward to applying my diverse skill set in the technology industry.
+      <h5 className="my-3 font-medium">{`I am a versatile full-stack software developer, music producer, and experienced general, sales, and warehouse manager, who has recently transitioned from a successful career in high-end retail in Ōtautahi, Aotearoa to a new life in Naarm, Australia. With a strong passion for creating innovative solutions, I thrive in an environment where I can use creative problem-solving in complex systems. I am looking forward to applying my diverse skill set in any industry I find myself in, especially if I can help build something new for the future.
   `}</h5>
       <div
         className="flex-grow p-4 mt-5"
